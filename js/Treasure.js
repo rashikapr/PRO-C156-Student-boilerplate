@@ -34,6 +34,12 @@ AFRAME.registerComponent("coins", {
       sphereRadius: 2
     });
 
+    //set the game play attribute
+    coinEl.setAttribute("game-play", {
+      elementId: `#${id}`,
+    });
+
+
     treasureEntity.appendChild(coinEl);
   },
 });

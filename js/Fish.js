@@ -38,6 +38,11 @@ AFRAME.registerComponent("fish", {
       sphereRadius: 2
     });
 
+     //set the game play attribute
+     fishEl.setAttribute("game-play", {
+      elementId: `#${id}`,
+    });
+
     fishModelEntity.appendChild(fishEl);
   }
 });
