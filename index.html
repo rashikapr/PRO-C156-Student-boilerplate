@@ -5,7 +5,7 @@
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
 
-    <!-- IMPORTED COMPONENTS -->
+    
     <script src="./js/Fish.js"></script>
     <script src="./js/Treasure.js"></script>
     <script src="./js/Rotation.js"></script>
@@ -33,7 +33,7 @@
         ></a-asset-item>
       </a-a-assets>
 
-      <!-- Sky -->
+   
       <a-sky
         geometry="primitive: sphere;"
         material="shader: gradient; bottomColor: #00009e; topColor:109 205 227;offset: 0.0001;"
@@ -42,16 +42,14 @@
         side="double"
         animation="property: rotation; to: 0 300 0; easing:linear; loop: true; dur: 500000"
       >
-        <!------------------------------------GLTF Models------------------------------------------>
-
-        <!--Island-->
+         
         <a-entity
           gltf-model="#island"
           scale="1 1 1"
           position="0 -15 -40"
         ></a-entity>
 
-        <!--Trasures-->
+      
         <a-entity
           gltf-model="#treasure"
           scale="15 15 15"
@@ -73,13 +71,13 @@
           rotation="0 90 0"
         ></a-entity>
 
-        <!--Fish Entity-->
+        
         <a-entity position="0 0 0" id="fishModels" fish> </a-entity>
 
-        <!--Treasure Entity-->
+      
         <a-entity position="0 0 0" id="treasureCoins" coins> </a-entity>
 
-        <!--Turtule-->
+         
         <a-entity
           gltf-model="#turtle"
           scale="0.005 0.005 0.005"
@@ -88,7 +86,7 @@
         ></a-entity>
       </a-sky>
 
-      <!--Scuba Driver-->
+     
       <a-entity
         gltf-model="#scuba_driver"
         scale="0.1 0.1 0.1"
@@ -113,7 +111,7 @@
 
       <a-cylinder color="#00009e" radius="100" opacity="0.2"></a-cylinder>
 
-      <!-- CAMERA -->
+       
       <a-entity
         camera="active: true"
         look-controls
@@ -121,14 +119,11 @@
       ></a-entity>
 
        <!-----------------------------------Game Timer and Score------------------------------------------>
-       <a-entity id="header" position="1 5 0">
-        <!-- Title -->
-        <a-entity
-          position="-28.5 21.5 0"
-          text="font: exo2bold; align: center; width: 45; color: black; value:VR Scuba Dive"
-        ></a-entity>
 
-        <!-- Timer -->
+
+      
+
+      
         <a-entity position="-23.5 19.3 0">
           <a-entity
             position=""
@@ -169,12 +164,9 @@
       </a-entity>
 
       <!------------------------------------Game Over-------------------------------->
-      <a-entity
-        id="game_over_text"
-        position="0 20 0"
-        text="font: exo2bold; align: center; width: 100; color: white;value: Game Over!!!"
-        visible="false"
-      ></a-entity>
+
+
+      
 
     </a-scene>
   </body>
